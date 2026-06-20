@@ -22,7 +22,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     padding: 1rem 2rem;
@@ -67,6 +67,22 @@ body {
     margin-bottom: 2rem;
 }
 
+.btn 
+{
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s;
+
+}
+
+.btn:hover
+{
+    transform: translateY(-13px);
+}
+
 .section {
     padding: 5rem 2rem;
     max-width: 1000px;
@@ -108,6 +124,7 @@ body {
 /* Hover of a project card  */
 .project-card:hover {
     transform: translateY(-20px); /* moves card up while hovered */
+    filter: drop-shadow(0 0 3px magenta); /* add background shadow */
 }
 
 .project-card h3 {
