@@ -65,7 +65,7 @@ body {
 }
 
 .intro p {
-    max-width: 600px;
+    max-width: 500px;
     margin-bottom: 2rem;
 }
 
@@ -121,10 +121,19 @@ body {
         margin-bottom: 2rem;
     }
 
+    ul {
+        /* padding-left: 0; */
+        font-size: large;
+        margin-bottom: 2rem;
+        /* list-style-position: inside; */
+        padding-left: 25px;
+    }
+
 
     margin-left: 5%;
     margin-right: 5%;
 }
+
 
 .skills-info {
     display: flex;
