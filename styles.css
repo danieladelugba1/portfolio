@@ -102,7 +102,7 @@ body {
 }
 
 .personal-info {
-    padding: 5rem 2rem;
+    padding: 5rem;
     max-width: 700px;
     margin: auto;
 }
@@ -112,6 +112,41 @@ body {
     margin-bottom: 2rem;
 }
 
+.personal-info p {
+    margin-top: 2rem;
+}
+
+.photo-container { 
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.profile-photo {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.profile-photo2 {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+} 
+
+.profile-photo:hover, .profile-photo2:hover {
+    transform: scale(1.1);
+}
 
 #about-me-paragraphs {
     padding: 5rem 10rem;
