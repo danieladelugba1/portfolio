@@ -1,3 +1,7 @@
+## Live Site
+
+https://danieladelugba1.github.io/portfolio
+
 # Portfolio Website
 
 Personal portfolio built with:
@@ -11,9 +15,7 @@ Personal portfolio built with:
 - Responsive design
 - Dark mode
 - Project filtering
-- Contact section
 - CV template
 
-## Live Site
+*** created with ❤️ by daniel adelugba ***
 
-https://danieladelugba1.github.io/portfolio

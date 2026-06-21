@@ -31,13 +31,14 @@ body {
     top: 0;
 
     background: var(--bg);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
 }
 
 .nav-links {
     display: flex;
     gap: 1rem;
     list-style: none;
+    /* align-items: */
 }
 
 .nav-links a {
@@ -90,7 +91,23 @@ body {
 }
 
 .section h2 {
+    text-align: center;
     margin-bottom: 2rem;
+}
+
+
+#about-me-paragraphs {
+    h2 {
+        margin-top: 3%;
+    }
+
+    p {
+        font-size: large;
+    }
+
+
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .skills {
