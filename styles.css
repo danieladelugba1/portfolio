@@ -35,7 +35,12 @@ body {
     border-bottom: 2px solid #ccc;
 }
 
+.navbar h2 {
+    margin-left: 60px;
+}
+
 .nav-links {
+    margin-right: 60px;
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -48,7 +53,7 @@ body {
 }
 
 .intro {
-    min-height: 55vh;
+    min-height: 45vh;
 
     display: flex;
     flex-direction: column;
@@ -113,12 +118,12 @@ body {
     max-width: 1000px;
     margin: auto;
     h2 {
-        margin-top: 3%;
+        margin-top: 10%;
     }
 
     p {
         font-size: large;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     ul {
