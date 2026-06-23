@@ -37,7 +37,7 @@ body {
     top: 0;
 
     background: var(--bg);
-    background-color: #ede4e4;
+    background-color: #c9c7c7;
     border-bottom: 2px solid #ccc;
 }
 
@@ -201,7 +201,7 @@ body {
 }
 
 /* Style for strcutre of card */
-.project-card {
+.home-project-card {
     background: var(--card);
     padding: 1.5rem;
     border-radius: 12px; /* used to round the background border corners */
@@ -210,18 +210,56 @@ body {
 }
 
 /* Hover of a project card  */
-.project-card:hover {
+.home-project-card:hover {
     transform: translateY(-20px); /* moves card up while hovered */
     filter: drop-shadow(0 0 3px magenta); /* add background shadow */
 }
 
-.project-card h3 {
+.home-project-card h3 {
     margin-bottom: 1rem;
+}
+
+.home-project-card p {
+    margin-bottom: 1rem;
+}
+
+/* CSS for Projects Page */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    background-color: #f9f9f9;
+}
+
+.project-card h2 {
+    margin-bottom: 0.5rem;
 }
 
 .project-card p {
     margin-bottom: 1rem;
 }
+
+.project-card ul {
+    margin-bottom: 1rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 
 footer {
     text-align: center;
