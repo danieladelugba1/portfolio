@@ -80,6 +80,7 @@ body {
     margin-bottom: 2rem;
 }
 
+
 .btn 
 {
     background: var(--accent);
@@ -92,6 +93,38 @@ body {
 }
 
 .btn:hover
+{
+    transform: translateY(-13px);
+}
+
+.btn_projects 
+{
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s;
+
+}
+
+.btn_projects:hover
+{
+    transform: translateY(-13px);
+}
+
+.btn_cv 
+{
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s;
+
+}
+
+.btn_cv:hover
 {
     transform: translateY(-13px);
 }
@@ -206,6 +239,8 @@ body {
     padding: 1.5rem;
     border-radius: 12px; /* used to round the background border corners */
 
+    text-decoration: none;
+    color: var(--text);
     transition: transform 0.2s;
 }
 
