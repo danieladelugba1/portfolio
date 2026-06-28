@@ -339,6 +339,16 @@ body {
     font-weight: bold;
 }
 
+.projects-container,
+.projects-hero {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 3rem 1.5rem;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
