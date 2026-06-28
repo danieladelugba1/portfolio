@@ -12,10 +12,9 @@ Personal portfolio built with:
 
 ## Features to come
 
-- Responsive design
+- Improved Projects redesign
 - Dark mode
 - Project filtering
-- CV template
 
-*** created with ❤️ by daniel adelugba ***
+created with ❤️ by daniel adelugba 
 
