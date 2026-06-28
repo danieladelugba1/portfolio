@@ -262,7 +262,7 @@ body {
 
 /* Hover of a project card  */
 .home-project-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: var(--shadow-md);
     border-color: rgba(37, 99, 235, 0.2);
 }
@@ -303,6 +303,15 @@ body {
     padding: 2rem;
 }
 
+.portfolio-image {
+    display: flex;
+    /* margin: auto; */
+    width: 600px;
+    
+    object-fit: cover;
+    
+}
+
 .project-card {
     padding: 1.5rem;
 
@@ -311,6 +320,7 @@ body {
 
     background-color: #f9f9f9;
 }
+
 
 .project-card h2 {
     margin-bottom: 0.5rem;
@@ -328,7 +338,6 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
-
 
 footer {
     text-align: center;
