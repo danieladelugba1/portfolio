@@ -382,6 +382,20 @@ body {
     transform: translateY(-4px);
 }
 
+.project-links a {
+    display: inline-block;
+    margin-right: 1rem;
+
+    color: #2563eb;
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
 
 /* General information */
 section {
