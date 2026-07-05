@@ -368,6 +368,20 @@ body {
     margin: 0 auto;
 }
 
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-case-study {
+    transition: transform 0.3s ease;
+}
+
+.project-case-study:hover {
+    transform: translateY(-4px);
+}
+
 
 /* General information */
 section {
