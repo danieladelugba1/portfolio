@@ -40,9 +40,9 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
 // Displaying more images for a project
 const images = [
 
-    "images/project1.png",
-    "images/project2.png",
-    "images/project3.png"
+    "assets/project1/dino1.png",
+    "assets/project1/dino2.png",
+    "assets/project1/dino3.png"
 
 ];
 
@@ -54,6 +54,7 @@ const modal = document.getElementById("gallery");
 document.getElementById("open-gallery")
 .addEventListener("click", () => {
 
+    console.log("Button clicked");
     modal.style.display = "flex";
 
 });
