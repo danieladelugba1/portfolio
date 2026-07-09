@@ -36,3 +36,61 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
         }
     });
 });
+
+// Displaying more images for a project
+const images = [
+
+    "images/project1.png",
+    "images/project2.png",
+    "images/project3.png"
+
+];
+
+let current = 0;
+
+// Opening the gallery
+const modal = document.getElementById("gallery");
+
+document.getElementById("open-gallery")
+.addEventListener("click", () => {
+
+    modal.style.display = "flex";
+
+});
+
+// Close the gallery
+document.getElementById("close")
+.addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+});
+
+// Cylcing between prev and next images
+document.getElementById("previous")
+.addEventListener("click", () => {
+
+    current--;
+
+    if(current < 0){
+        current = images.length - 1;
+    }
+
+    document.getElementById("gallery-image").src =
+        images[current];
+
+});
+
+document.getElementById("next")
+.addEventListener("click", () => {
+
+    current++;
+
+    if(current >= images.length){
+        current = 0;
+    }
+
+    document.getElementById("gallery-image").src =
+        images[current];
+
+});

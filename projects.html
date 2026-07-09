@@ -13,7 +13,6 @@
 
 </head>
 
-
 <body>
 
     <header>
@@ -89,7 +88,7 @@
                     <a href="https://github.com/danieladelugba1/hacknotts-25/tree/main">View repository</a>
                     <a href="https://www.youtube.com/watch?v=Z9q1o29vjfc" target="_blank">Demo</a>
                     <a href="https://devpost.com/software/medieval-tower-defense" >Devpost</a>
-                    <a href="">More Images</a>
+                    <button id="open_gallery">More Images</button>
                     
                 </div>
             
@@ -133,7 +132,7 @@
                         Source unavailable due to university coursework policy.
                     </p>
                     <a href="">Demo</a>
-                    <a href="">More Images</a>
+                    <button id="open_gallery">More Images</button>
                     
                 </div>
             
@@ -227,6 +226,26 @@
 
     </main>
 
+    <!-- Sepearate section for viewing gallery of images -->
+    <div id="gallery" class="window">
+
+        <div class="window-content">
+
+            <span id="close">&times;</span>
+    
+            <!-- Initial image -->
+            <img id="gallery-image" src="assets/project1/dino1.png">
+    
+            <div class="project_buttons">
+                <button id="previous">Previous</button>
+                <button id="next">Next</button>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 
