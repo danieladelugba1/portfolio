@@ -72,6 +72,7 @@ const buttons = document.querySelectorAll(".gallery-btn");
 const demoButtons = document.querySelectorAll(".video-btn");
 const galleryImage = document.getElementById("gallery-image");
 const galleryVideo = document.getElementById("gallery-video");
+const galleryButtons = document.getElementById("gallery-buttons");
 
 buttons.forEach(button => {
 
@@ -101,6 +102,7 @@ demoButtons.forEach(button => {
 
         galleryImage.style.display = "none";
         galleryVideo.style.display = "block";
+        galleryButtons.style.display = "none";
 
         galleryVideo.src = demos[project];
 
@@ -116,6 +118,7 @@ document.getElementById("close")
 .addEventListener("click", () => {
 
     modal.style.display = "none";
+    galleryVideo.pause();
 
 });
 
