@@ -85,6 +85,7 @@ buttons.forEach(button => {
 
         galleryVideo.style.display = "none";
         galleryImage.style.display = "block";
+        galleryButtons.style.display = "block";
         galleryImage.src = currentGallery[current];
 
         console.log("Button clicked");
