@@ -57,13 +57,21 @@ const galleries = {
     ]
 };
 
+const demos = {
+    dino_remake: [
+        "assets/dino_demo.mp4"
+    ]
+}
+
 let current = 0;
 let currentGallery = [];
 
 // Opening the gallery
 const modal = document.getElementById("gallery");
 const buttons = document.querySelectorAll(".gallery-btn");
+const demoButtons = document.querySelectorAll(".video-btn");
 const galleryImage = document.getElementById("gallery-image");
+const galleryVideo = document.getElementById("gallery-video");
 
 buttons.forEach(button => {
 
@@ -72,9 +80,10 @@ buttons.forEach(button => {
         const project = button.dataset.project;
 
         currentGallery = galleries[project];
-
         current = 0;
 
+        galleryVideo.style.display = "none";
+        galleryImage.style.display = "block";
         galleryImage.src = currentGallery[current];
 
         console.log("Button clicked");
@@ -83,6 +92,24 @@ buttons.forEach(button => {
     });
 
 });
+
+demoButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const project = button.dataset.project;
+
+        galleryImage.style.display = "none";
+        galleryVideo.style.display = "block";
+
+        galleryVideo.src = demos[project];
+
+        modal.style.display = "flex";
+
+    });
+
+});
+
 
 // Close the gallery
 document.getElementById("close")
