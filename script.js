@@ -50,10 +50,10 @@ const galleries = {
 
     hackathon: [
         "assets/project2/mediaval.png",
-        "assets/project2/mediaval1.png",
-        "assets/project2/mediaval2.png",
-        "assets/project2/mediaval3.png",
-        "assets/project2/mediaval4.png"
+        "assets/project2/mediaval1.jpg",
+        "assets/project2/mediaval2.jpg",
+        "assets/project2/mediaval3.jpg",
+        "assets/project2/mediaval4.jpg"
     ]
 };
 
@@ -99,11 +99,10 @@ document.getElementById("previous")
     current--;
 
     if(current < 0){
-        current = images.length - 1;
+        current = currentGallery.length - 1;
     }
 
-    document.getElementById("gallery-image").src =
-        images[current];
+    galleryImage.src = currentGallery[current];
 
 });
 
@@ -112,11 +111,10 @@ document.getElementById("next")
 
     current++;
 
-    if(current >= images.length){
+    if(current >= currentGallery.length){
         current = 0;
     }
 
-    document.getElementById("gallery-image").src =
-        images[current];
+    galleryImage.src = currentGallery[current];
 
 });
