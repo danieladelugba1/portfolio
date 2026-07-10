@@ -38,24 +38,49 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
 });
 
 // Displaying more images for a project
-const images = [
+const galleries = {
+    dino_remake: [
+        "assets/project1/dino.png",
+        "assets/project1/dino1.png",
+        "assets/project1/dino2.png",
+        "assets/project1/dino3.png",
+        "assets/project1/dino4.png",
+        "assets/project1/dino5.png"
+    ],
 
-    "assets/project1/dino1.png",
-    "assets/project1/dino2.png",
-    "assets/project1/dino3.png"
-
-];
+    hackathon: [
+        "assets/project2/mediaval.png",
+        "assets/project2/mediaval1.png",
+        "assets/project2/mediaval2.png",
+        "assets/project2/mediaval3.png",
+        "assets/project2/mediaval4.png"
+    ]
+};
 
 let current = 0;
+let currentGallery = [];
 
 // Opening the gallery
 const modal = document.getElementById("gallery");
+const buttons = document.querySelectorAll(".gallery-btn");
+const galleryImage = document.getElementById("gallery-image");
 
-document.getElementById("open-gallery")
-.addEventListener("click", () => {
+buttons.forEach(button => {
 
-    console.log("Button clicked");
-    modal.style.display = "flex";
+    button.addEventListener("click", () => {
+
+        const project = button.dataset.project;
+
+        currentGallery = galleries[project];
+
+        current = 0;
+
+        galleryImage.src = currentGallery[current];
+
+        console.log("Button clicked");
+        modal.style.display = "flex";
+
+    });
 
 });
 
