@@ -439,6 +439,7 @@ body {
     width: 1000px;
     max-width: 90%;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 #gallery-video {
