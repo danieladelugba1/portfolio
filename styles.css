@@ -382,7 +382,7 @@ body {
     transform: translateY(-4px);
 }
 
-.project-links a {
+.project-links a{
     display: inline-block;
     margin-right: 1rem;
 
@@ -390,6 +390,7 @@ body {
     text-decoration: none;
 
     font-weight: 500;
+    
 }
 
 .project-links a:hover {
@@ -412,20 +413,22 @@ body {
 .window-content {
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
 }
 
 #gallery-image {
-    width: 600px;
+    width: 1000px;
     max-width: 90%;
+    border-radius: 10px;
 }
 
 #close {
     float: right;
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
 }
+
 
 
 
