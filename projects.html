@@ -7,12 +7,11 @@
     <meta name="author" content="Daniel Adelugba">
     <meta name="description" content="Daniel Adelugba portfolio">
 
-    <title>Portfolio projects of Daniel Adelugba</title>
+    <title>Featured Projects of Daniel Adelugba</title>
 
     <link rel="stylesheet" href="styles.css">
 
 </head>
-
 
 <body>
 
@@ -89,7 +88,7 @@
                     <a href="https://github.com/danieladelugba1/hacknotts-25/tree/main">View repository</a>
                     <a href="https://www.youtube.com/watch?v=Z9q1o29vjfc" target="_blank">Demo</a>
                     <a href="https://devpost.com/software/medieval-tower-defense" >Devpost</a>
-                    <a href="">More Images</a>
+                    <a class="gallery-btn" data-project="hackathon">More Images</a>
                     
                 </div>
             
@@ -132,8 +131,8 @@
                     <p>
                         Source unavailable due to university coursework policy.
                     </p>
-                    <a href="">Demo</a>
-                    <a href="">More Images</a>
+                    <a class="video-btn" data-project="dino_remake">Demo</a>
+                    <a class="gallery-btn" data-project="dino_remake">More Images</a>
                     
                 </div>
             
@@ -227,6 +226,31 @@
 
     </main>
 
+    <!-- Sepearate section for viewing gallery of images -->
+    <div id="gallery" class="window">
+
+        <div class="window-content">
+
+            <span id="close">&times;</span>
+    
+            <!-- Initial image -->
+            <img id="gallery-image" src="assets/project1/dino1.png">
+
+            <video
+                id="gallery-video"
+                controls src="assets/dino_demo.mp4">
+            </video>
+    
+            <div class="project_buttons" id="gallery-buttons">
+                <button id="previous">Previous</button>
+                <button id="next">Next</button>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 
