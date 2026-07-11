@@ -54,6 +54,7 @@ body {
     width: 70px;
     height: auto;
     margin-left: 60px;
+    cursor: pointer;
 }
 
 .navbar {

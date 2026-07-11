@@ -66,7 +66,6 @@ const demos = {
 let current = 0;
 let currentGallery = [];
 
-// Opening the gallery
 const modal = document.getElementById("gallery");
 const buttons = document.querySelectorAll(".gallery-btn");
 const demoButtons = document.querySelectorAll(".video-btn");
@@ -74,6 +73,7 @@ const galleryImage = document.getElementById("gallery-image");
 const galleryVideo = document.getElementById("gallery-video");
 const galleryButtons = document.getElementById("gallery-buttons");
 
+// Opening the gallery if "More Images" is clicked
 buttons.forEach(button => {
 
     button.addEventListener("click", () => {
@@ -95,6 +95,7 @@ buttons.forEach(button => {
 
 });
 
+// Opening the gallery if "Demo" is clicked
 demoButtons.forEach(button => {
 
     button.addEventListener("click", () => {
