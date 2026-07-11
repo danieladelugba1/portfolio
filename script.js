@@ -40,26 +40,26 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
 // Displaying more images for a project
 const galleries = {
     dino_remake: [
-        "assets/project1/dino.png",
-        "assets/project1/dino1.png",
-        "assets/project1/dino2.png",
-        "assets/project1/dino3.png",
-        "assets/project1/dino4.png",
-        "assets/project1/dino5.png"
+        "assets/dino_project/dino.png",
+        "assets/dino_project/dino1.png",
+        "assets/dino_project/dino2.png",
+        "assets/dino_project/dino3.png",
+        "assets/dino_project/dino4.png",
+        "assets/dino_project/dino5.png"
     ],
 
     hackathon: [
-        "assets/project2/mediaval.png",
-        "assets/project2/mediaval1.jpg",
-        "assets/project2/mediaval2.jpg",
-        "assets/project2/mediaval3.jpg",
-        "assets/project2/mediaval4.jpg"
+        "assets/mediaval_project/mediaval.png",
+        "assets/mediaval_project/mediaval1.jpg",
+        "assets/mediaval_project/mediaval2.jpg",
+        "assets/mediaval_project/mediaval3.jpg",
+        "assets/mediaval_project/mediaval4.jpg"
     ]
 };
 
 const demos = {
     dino_remake: [
-        "assets/dino_demo.mp4"
+        "assets/dino_project/dino_demo.mp4"
     ]
 }
 
