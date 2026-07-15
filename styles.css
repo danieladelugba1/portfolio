@@ -214,27 +214,24 @@ body {
 #about-me-paragraphs {
     padding: 5rem 5rem;
     max-width: 2000px;
-    margin: auto;  
-    h2 {
-        margin-top: 10%;
-    }
-    
-    p {
-        font-size: large;
-        margin-bottom: 1rem;
-    }
-    
-    ul {
-        /* padding-left: 0; */
-        font-size: large;
-        margin-bottom: 2rem;
-        /* list-style-position: inside; */
-        padding-left: 25px;
-    }
-    
-    
+    margin: auto;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#about-me-paragraphs h2 {
+    margin-top: 10%;
+}
+
+#about-me-paragraphs p {
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+#about-me-paragraphs ul {
+    font-size: large;
+    margin-bottom: 2rem;
+    padding-left: 25px;
 }
 
 
@@ -366,7 +363,7 @@ body {
     border-radius: 999px;
 
     background: rgba(37, 99, 235, 0.08);
-    color: #2563eb;
+    color: var(--accent);
 
     font-size: 0.85rem;
 }
@@ -404,17 +401,20 @@ body {
 
 .project-case-study {
     transition: transform 0.3s ease;
+    border-radius:16px;
+    padding:3rem;
 }
 
 .project-case-study:hover {
     transform: translateY(-4px);
+    background:white;
 }
 
 .project-links a{
     display: inline-block;
     margin-right: 1rem;
 
-    color: #2563eb;
+    color: var(--accent);
     text-decoration: none;
 
     font-weight: 500;

@@ -14,8 +14,6 @@
 //     document.body.classList.add("dark-mode");
 // }
 
-// const list = document.querySelectorAll("#");
-
 
 // Scrolling rather than jumping for projects cards
 document.querySelectorAll('a[href*="#"]').forEach(link => {
