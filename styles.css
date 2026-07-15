@@ -69,7 +69,8 @@ body {
 
     background: var(--bg);
     background-color: #c9c7c7;
-    border-bottom: 2px solid #ccc;
+    /* border-bottom: 2px solid #ccc; */
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
 
 .navbar h2 {
@@ -87,6 +88,25 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text);
+    position:relative;
+    transition:.2s;
+}
+
+.nav-links a::after{
+
+    content:"";
+    position:absolute;
+    bottom:-5px;
+    left:0;
+    width:0;
+    height:2px;
+    background:var(--accent);
+    transition:.25s;
+
+}
+
+.nav-links a:hover::after{
+    width:100%;
 }
 
 /* Main section of home page */
@@ -139,7 +159,7 @@ body {
 
 .btn:hover
 {
-    transform: translateY(-7px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-sm);
     filter: drop-shadow(0 0 6px rgb(31, 121, 28));
 }
@@ -171,7 +191,6 @@ body {
     margin: auto;
     width: 400px;
     height: 400px;
-    
     object-fit: cover;
     
     border-radius: 50%;
@@ -468,10 +487,10 @@ body {
 }
 
 #contact {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
 }
 
 #contact a {
@@ -487,8 +506,6 @@ body {
 #contact p {
     display: flex;
 }
-
-
 
 
 
@@ -515,9 +532,11 @@ footer {
     }
 
     .nav-links{
+        margin-left: 0;
         margin:0;
         flex-direction:column;
         align-items:center;
+        margin-right: 0;
     }
 
     .photo-container{
