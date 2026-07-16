@@ -133,7 +133,7 @@ if (closeBtn) {
 }
 
 // Cylcing between prev and next images
-const prevBtn = document.getElementById("close");
+const prevBtn = document.getElementById("previous");
 
 if (prevBtn) {
     prevBtn.addEventListener("click", () => {
@@ -149,7 +149,7 @@ if (prevBtn) {
     });
 }
 
-const nextBtn = document.getElementById("close");
+const nextBtn = document.getElementById("next");
 
 if (nextBtn) {
     nextBtn.addEventListener("click", () => {
