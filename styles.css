@@ -75,6 +75,11 @@ body {
     cursor: pointer;
 }
 
+#themeBtn {
+    width: 40px;
+    height: auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
