@@ -1,18 +1,18 @@
-// const themeBtn = document.getElementById("themeBtn");
+const themeBtn = document.getElementById("themeBtn");
 
-// themeBtn.addEventListener("click", () => {
+themeBtn.addEventListener("click", () => {
 
-//     document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
 
-//     const darkModeEnabled =
-//         document.body.classList.contains("dark-mode");
+    const darkModeEnabled =
+        document.body.classList.contains("dark-mode");
 
-//     localStorage.setItem("darkMode", darkModeEnabled);
-// });
+    localStorage.setItem("darkMode", darkModeEnabled);
+});
 
-// if (localStorage.getItem("darkMode") === "true") {
-//     document.body.classList.add("dark-mode");
-// }
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
+}
 
 
 // Scrolling rather than jumping for projects cards

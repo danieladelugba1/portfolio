@@ -16,6 +16,10 @@
     --max-width: 1100px;
 }
 
+.dark-mode {
+    --bg: #0a1826;
+}
+
 h1 {
     font-size: 3rem;
     letter-spacing: -0.03em;
