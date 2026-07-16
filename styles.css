@@ -74,7 +74,7 @@ body {
     cursor: pointer;
 }
 
-#themeBtn {
+#themeBtn_id {
     width: 40px;
     height: auto;
     margin-right: 60px;
