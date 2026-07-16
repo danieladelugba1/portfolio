@@ -71,13 +71,14 @@ body {
     width: 70px;
     height: auto;
     margin-left: 60px;
-    /* padding-inline:2rem; */
     cursor: pointer;
 }
 
 #themeBtn {
     width: 40px;
     height: auto;
+    margin-right: 60px;
+    cursor: pointer;
 }
 
 .navbar {
@@ -97,12 +98,8 @@ body {
     box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
 
-.navbar h2 {
-    margin-left: 60px;
-}
-
 .nav-links {
-    margin-right: 60px;
+    /* margin-right: 60px; */
     display: flex;
     gap: 1rem;
     list-style: none;
