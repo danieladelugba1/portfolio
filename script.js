@@ -6,16 +6,20 @@ if (localStorage.getItem("darkMode") === "true") {
 }
 
 // Toggle theme
-themeBtn.addEventListener("click", () => {
+if(themeBtn)
+{
 
-    document.body.classList.toggle("dark-mode");
-
-    localStorage.setItem(
-        "darkMode",
-        document.body.classList.contains("dark-mode")
-    );
-
-});
+    themeBtn.addEventListener("click", () => {
+        
+        document.body.classList.toggle("dark-mode");
+        
+        localStorage.setItem(
+            "darkMode",
+            document.body.classList.contains("dark-mode")
+        );
+        
+    });
+}
 
 
 // Scrolling rather than jumping for projects cards
@@ -117,37 +121,46 @@ demoButtons.forEach(button => {
 
 
 // Close the gallery
-document.getElementById("close")
-.addEventListener("click", () => {
+const closeBtn = document.getElementById("close");
 
-    modal.style.display = "none";
-    galleryVideo.pause();
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
 
-});
+        modal.style.display = "none";
+        galleryVideo.pause();
+
+    });
+}
 
 // Cylcing between prev and next images
-document.getElementById("previous")
-.addEventListener("click", () => {
+const prevBtn = document.getElementById("close");
 
-    current--;
+if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+        
+        current--;
+        
+        if(current < 0){
+            current = currentGallery.length - 1;
+        }
+        
+        galleryImage.src = currentGallery[current];
+        
+    });
+}
 
-    if(current < 0){
-        current = currentGallery.length - 1;
-    }
+const nextBtn = document.getElementById("close");
 
-    galleryImage.src = currentGallery[current];
-
-});
-
-document.getElementById("next")
-.addEventListener("click", () => {
-
-    current++;
-
-    if(current >= currentGallery.length){
-        current = 0;
-    }
-
-    galleryImage.src = currentGallery[current];
-
-});
+if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+        
+        current++;
+        
+        if(current >= currentGallery.length){
+            current = 0;
+        }
+        
+        galleryImage.src = currentGallery[current];
+        
+    });
+}

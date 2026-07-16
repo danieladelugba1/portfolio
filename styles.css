@@ -582,4 +582,12 @@ button:focus-visible {
         flex-direction:column;
     }
 
+    .logo {
+        margin-left: 0px;
+    }
+
+    #themeBtn_id {
+        margin-right: 0px;
+    }
+
 }
