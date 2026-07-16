@@ -1,6 +1,6 @@
 ## Live Site
 
-https://danieladelugba1.github.io/portfolio
+www.danieladelugba.com 
 
 # Portfolio Website
 
