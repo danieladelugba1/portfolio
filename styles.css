@@ -17,6 +17,7 @@
     --max-width: 1100px;
     --nav-bg:#c9c7c7;
     --muted:#6B7280;
+    --bg-hover: rgb(218, 209, 209);
 }
 
 .dark-mode {
@@ -30,6 +31,7 @@
     --border:#4B5563;
     --shadow:rgba(0,0,0,.5);
     --nav-bg:#1F2937;
+    --bg-hover: rgb(45, 60, 85);
 }
 
 h1 {
@@ -407,15 +409,15 @@ body {
     gap: 4rem;
     align-items: center;
     padding: 4rem 0;
-    border-bottom: 2px solid rgba(0,0,0,0.08);
+    border-bottom: 3px solid rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
-    border-radius:16px;
-    padding:3rem;
+    border-radius: 16px;
+    padding: 3rem;
 }
 
 .project-case-study:hover {
     transform: translateY(-4px);
-    background:white;
+    background: var(--bg-hover);
 }
 
 .project-links a{
