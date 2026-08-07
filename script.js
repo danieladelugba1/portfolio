@@ -1,8 +1,21 @@
 const themeBtn = document.getElementById("themeBtn");
+const logo = document.getElementById("logo");
 
 // Load saved theme
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-mode");
+}
+
+function updateTheme()
+{
+    const dark = document.body.classList.contains("dark-mode");
+
+    // Change logo
+    if (logo) {
+        logo.src = dark
+        ? "assets/logos/whiteLogo.png"
+        : "assets/logos/logo2.png";
+    }
 }
 
 // Toggle theme
@@ -18,8 +31,11 @@ if(themeBtn)
             document.body.classList.contains("dark-mode")
         );
         
+        updateTheme();
     });
 }
+
+updateTheme();
 
 
 // Scrolling rather than jumping for projects cards
