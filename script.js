@@ -1,5 +1,6 @@
 const themeBtn = document.getElementById("themeBtn");
 const logo = document.getElementById("logo");
+const contactIcons = document.querySelectorAll(".contact-icon");
 
 // Load saved theme
 if (localStorage.getItem("darkMode") === "true") {
@@ -16,7 +17,15 @@ function updateTheme()
         ? "assets/logos/whiteLogo.png"
         : "assets/logos/logo2.png";
     }
+
+    contactIcons.forEach(icon => {
+        icon.src = dark
+            ? icon.dataset.dark
+            : icon.dataset.light;
+    });
 }
+
+updateTheme();
 
 // Toggle theme
 if(themeBtn)
@@ -34,9 +43,6 @@ if(themeBtn)
         updateTheme();
     });
 }
-
-updateTheme();
-
 
 // Scrolling rather than jumping for projects cards
 document.querySelectorAll('a[href*="#"]').forEach(link => {

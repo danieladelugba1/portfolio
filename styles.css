@@ -281,7 +281,9 @@ body {
     text-align: left;
     margin-bottom: 1rem;
 }
-
+.section a {
+    color: #33a7ff
+}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -494,7 +496,7 @@ body {
     cursor: pointer;
 }
 
-.icon {
+.contact-icon {
     width: 40px;
     height: 40px;
 }
