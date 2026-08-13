@@ -25,24 +25,24 @@ function updateTheme()
     });
 }
 
-updateTheme();
-
 // Toggle theme
 if(themeBtn)
 {
-
     themeBtn.addEventListener("click", () => {
-        
-        document.body.classList.toggle("dark-mode");
-        
-        localStorage.setItem(
-            "darkMode",
-            document.body.classList.contains("dark-mode")
-        );
-        
-        updateTheme();
+            
+    document.body.classList.toggle("dark-mode");
+            
+    localStorage.setItem(
+        "darkMode",
+        document.body.classList.contains("dark-mode")
+    );
+            
+    updateTheme();
+    
     });
 }
+    
+updateTheme();
 
 // Scrolling rather than jumping for projects cards
 document.querySelectorAll('a[href*="#"]').forEach(link => {
